@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    background-color: #14110f;
+
+    padding-top: 40px;
+}
+
+/* --- TEXT ELEMENTS --- */
+
+.name {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: 75%;
+    color: #6daedb;
+}
+
+.text1 {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #6daedb;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 25px;
+
+    padding-bottom: 30px;
+    border-bottom: 5px solid #ec0b43;
+}
+
+.subtitle,
+.subtitle2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Verdana';
+    color: #6daedb;
+    margin-left: 5px;
+    margin-top: 40px;
+    text-align: center;
+
+    padding-bottom: 30px;
+    border-bottom: 5px solid #ec0b43;
+}
+
+/* --- LIST + LINKS --- */
+
+.list {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: fantasy;
+    color: #6daedb;
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Fix link color (remove default blue) */
+.list a {
+    color: #6daedb;       /* your theme color */
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.list a:hover {
+    color: #ec0b43;       /* hover color that matches your accent */
+}
+
+/*.footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: fantasy;
+    color: #6daedb;
+    margin-top: auto;
+    padding: 20px 0;
+    border-top: 5px solid #ec0b43;
+
+    display: flex;                
+    justify-content: center;      
+    gap: 25px;                    
+}*/
+
+.footer {
+    text-align: center;
+    font-size: 15px;
+    font-family: fantasy;
+    color: #6daedb;
+    margin-top: 50px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 20px 0;
+
+    border-top: 5px solid #ec0b43; /* red line above footer */
+    background-color: #14110f;     /* background to avoid overlap */
+}
+
+
+/* Links inside footer */
+.footer-link {
+    color: #6daedb;               /* main theme blue */
+    text-decoration: none;
+    transition: 0.3s ease;        /* smooth hover animation */
+}
+
+/* Hover effect */
+.footer-link:hover {
+    color: #ec0b43;               /* red accent */
+    text-decoration: underline;
+}
+
+/* Optional separator styling (|) */
+.footer-separator {
+    color: #6daedb;
+    opacity: 0.5;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.profile-img{
+    width: 260px;         /* adjust size */
+    height: auto;
+    border-radius: 200px;  /* optional rounded corners */
+    border: 4px solid #ec0b43; /* matches your red accent color */
+}
+
+/* --- CONTACT PAGE STYLES --- */
+
+.contact-container {
+    margin-top: 40px;
+    margin-bottom: 120px;  /* space above fixed footer */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 40px;
+}
+
+.contact-item {
+    font-size: 22px;
+    font-family: 'Verdana';
+    color: #6daedb;
+}
+
+.label {
+    font-weight: 700;
+    margin-right: 10px;
+    color: #ec0b43;  /* red accent */
+}
+
+.contact-link {
+    color: #6daedb;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ec0b43;
+    border-bottom: 2px solid #ec0b43;
+}
